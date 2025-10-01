@@ -40,14 +40,14 @@ let
 in
 stdenv.mkDerivation rec {
   pname = "m1n1";
-  version = "1.4.21";
+  version = "1.5.0";
 
   src = fetchFromGitHub {
     # tracking: https://src.fedoraproject.org/rpms/m1n1
     owner = "AsahiLinux";
     repo = "m1n1";
     rev = "v${version}";
-    hash = "sha256-PEjTaSwcsV8PzM9a3rDWMYXGX9FlrM0oeElrP5HYRPg=";
+    hash = "sha256-qQIGTpBVR6v4iawuIzZ76Cl7Q11u3rJIVeXa1NbMztc=";
     fetchSubmodules = true;
   };
   cargoVendorDir = ".";
